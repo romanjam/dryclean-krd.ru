@@ -70,8 +70,8 @@
           </h2>
 
           <ul>
-            <li>Ул. Вишняковой, 2, тел. <a href="phone:2223322">8(989)849-72-43</a></li>
-            <li>Ул. Уральская, 79, здание гипермаркета «Ашан», тел. <a href="phone:2223322">8(861)210-96-94</a></li>
+            <li>Ул. Вишняковой, 2, тел. <a href="phone:8 (989) 849-72-43">8 (989) 849-72-43</a></li>
+            <li>Ул. Уральская, 79, здание гипермаркета «Ашан», тел. <a href="phone:8 (861) 210-96-94">8 (861) 210-96-94</a></li>
           </ul>
 
           <h2 class="deco">
@@ -79,14 +79,14 @@
           </h2>
 
           <ul>
-            <li>Ул. Тургеневское шоссе д. 27, ТЦ «Мега Адыгея-Кубань», тел. 8(861)273-19-99</li>
-            <li>Ул. Дзержинского, д. 42, здание гипермаркета «Магнит», тел. 8(918)353-71-52</li>
-            <li>Ул. Кубанская набережная 25, здание супермаркета «Табрис», тел. 8(988)473-84-47</li>
-            <li>Ул. Проспект Чекистов 1/3, здание супермаркета «Табрис», тел. 8(988)524-28-40</li>
-            <li>Ул. Кореновская 2, к. 1, здание супермаркета «Табрис», тел. 8(988)386-95-99</li>
+            <li>Ул. Тургеневское шоссе д. 27, ТЦ «Мега Адыгея-Кубань», тел. <a href="phone:8 (861) 273-19-99">8 (861) 273-19-99</a></li>
+            <li>Ул. Дзержинского, д. 42, здание гипермаркета «Магнит», тел. <a href="phone:8 (918) 353-71-52">8 (918) 353-71-52</a></li>
+            <li>Ул. Кубанская набережная 25, здание супермаркета «Табрис», тел. <a href="phone:8 (988) 473-84-47">8 (988) 473-84-47</a></li>
+            <li>Ул. Проспект Чекистов 1/3, здание супермаркета «Табрис», тел. <a href="phone:8 (988) 524-28-40">8 (988) 524-28-40</a></li>
+            <li>Ул. Кореновская 2, к. 1, здание супермаркета «Табрис», тел. <a href="phone:8 (988) 386-95-99">8 (988) 386-95-99</a></li>
             <!-- <li>Ул. Володи Головатого 313, ТЦ «Галерея Краснодар», Дом быта, 0 этаж, тел. 8(861)298-00-90</li> -->
-            <li>Ул. Солнечная 18/3, здание гипермаркета «Магнит», тел. 8(918)149-39-00</li>
-            <li>Ул. 40-летия Победы 174, здание гипермаркета «Магнит», тел. 8(918)416-72-02</li>
+            <li>Ул. Солнечная 18/3, здание гипермаркета «Магнит», тел. <a href="phone:8 (918) 149-39-00">8 (918) 149-39-00</a></li>
+            <li>Ул. 40-летия Победы 174, здание гипермаркета «Магнит», тел. <a href="phone:8 (918) 416-72-02">8 (918) 416-72-02</a></li>
           </ul>
         </div>
 
@@ -109,7 +109,7 @@
       </div>
     </div>
 
-    <div id="map"></div>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aea4146abfa2a2ba70458775b2be64f6402f441758aaaf467c1a3a63be49e3f94&amp;width=100%25&amp;height=455&amp;lang=ru_RU&amp;scroll=true"></script>
 
     <footer class="container-fluid p-0">
       <div class="footer">
@@ -153,56 +153,5 @@
 
     <script src="./js/index.js"></script>
 
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(
-            document.getElementById('map'),
-            {center: new google.maps.LatLng(45.057203,38.9716453), zoom: 12});
-
-        var features = [
-          {
-            position: new google.maps.LatLng(45.0109256,38.9880269),
-          },
-          {
-            position: new google.maps.LatLng(45.0341714,39.0479171),
-          },
-          
-          {
-            position: new google.maps.LatLng(45.0158627, 38.9291606),
-          },
-          {
-            position: new google.maps.LatLng(45.0672512,38.9713267),
-          },
-          {
-            position: new google.maps.LatLng(45.0224208,38.957219),
-          },
-          {
-            position: new google.maps.LatLng(45.027489,38.9032861),
-          },
-          {
-            position: new google.maps.LatLng(45.0973729,38.9687416),
-          },
-          {
-            position: new google.maps.LatLng(45.0714547,39.0022219),
-          },
-          {
-            position: new google.maps.LatLng(45.0548212,39.0288949),
-          }, 
-        ];
-
-        // Create markers.
-        for (var i = 0; i < features.length; i++) {
-          var marker = new google.maps.Marker({
-            position: features[i].position,
-            // icon: icons[features[i].type].icon,
-            map: map,
-          });
-        };
-      }
-    </script>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH-LYbvKtmoycrr2Ghr-U4DmbFxL5dwx8&callback=initMap">
-    </script>
   </body>
 </html>
